@@ -1,45 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Realistic Projectile Physics</title>
-    <!-- Link to CSS file -->
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-
-    <h1>Ballistic Simulator</h1>
-
-    <div class="controls">
-        <div class="control-group">
-            <label>Velocity (m/s)</label>
-            <span class="value-display" id="vVal">50</span>
-            <input type="range" id="velocity" min="10" max="150" value="50">
-        </div>
-        <div class="control-group">
-            <label>Angle (°)</label>
-            <span class="value-display" id="aVal">45</span>
-            <input type="range" id="angle" min="5" max="85" value="45">
-        </div>
-        <div class="control-group">
-            <label>Air Drag</label>
-            <span class="value-display" id="dVal">0.010</span>
-            <input type="range" id="drag" min="0" max="50" value="10">
-        </div>
-        <button id="fireBtn">FIRE</button>
-    </div>
-
-    <div class="game-container">
-        <canvas id="simCanvas" width="900" height="500"></canvas>
-        <div class="hud" id="hud">
-            Distance: 0.0 m <br>
-            Height: 0.0 m <br>
-            Speed: 0.0 m/s
-        </div>
-    </div>
-
-    <!-- Link to JS file -->
-    <script src="script.js"></script>
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Projectile Simulator</title>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.jsx"></script>
+  </body>
 </html>
